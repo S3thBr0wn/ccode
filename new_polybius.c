@@ -1,5 +1,6 @@
 #include <cmath>
 #include <iostream>
+#include <stdio.h>
 using namespace std;
 
 void polybiusCipher(string s) {
