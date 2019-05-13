@@ -2,24 +2,7 @@
 #include <cmath>
 #include <iostream>
 using namespace std;	
-int main() 
-{
-	printf("Thank you for installing Greek encryption and decryption tool! \n" );
-	printf("this tool uses encryption methods from famous Greek historians \n" );
-	int code;
-	int en;
-	int de;
-	int choice;
-	int row, col;
-	//Polybius submenu
-	printf("Enter either 1 or 2(1 for Polybius encryption or 2 for Caeser Cipher encryption and decryption): ");
-	scanf("%d", &en, &de);
-	if(1 == en)
-	{
-		printf("\nWelcome to the Polybius encryption part of the tool!\n");
-		printf("\nNow choose the letters to encrypt: ", &en);
-		scanf("%d", &col, &row);
-		void polybiusCipher(string s);{
+void polybiusCipher(string s){
 		for (int i = 0, s[i]; i++;) {
 			row = ceil((s[i] - 'a') / 5) + 1;
 			col = ((s[i] - 'a') %  5) + 1;
@@ -38,6 +21,26 @@ int main()
 	}
 	cout << endl;
 }
+
+
+int main() 
+{
+	printf("Thank you for installing Greek encryption and decryption tool! \n" );
+	printf("this tool uses encryption methods from famous Greek historians \n" );
+	int code;
+	int en;
+	int de;
+	int choice;
+	int row, col;
+	//Polybius submenu
+	printf("Enter either 1 or 2(1 for Polybius encryption or 2 for Caeser Cipher encryption and decryption): ");
+	scanf("%d", &en, &de);
+	if(1 == en)
+	{
+		printf("\nWelcome to the Polybius encryption part of the tool!\n");
+		printf("\nNow choose the letters to encrypt: ", &en);
+		scanf("%d", &col, &row);
+		
 printf("\nHere is your result: %d\n");
 return 0;
 }
